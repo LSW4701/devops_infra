@@ -10,7 +10,7 @@ cluster_endpoint_public_access = true
 worker_instance_type = "t3.small"
 worker_instance_count = 3
 worker_instance_public_ip = true
-worker_key_name = "prod"
+worker_key_name = "linux1"  # key값 
 
 enable_irsa = true
 
