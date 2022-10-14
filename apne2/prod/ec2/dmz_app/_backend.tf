@@ -1,8 +1,8 @@
 terraform {
 
   backend "s3" {
-    bucket = "lsw-bucket"             #   버켓명 
-    key = "terra2/terraform.tfstate"  #  생성되는 폴더/파일명  
+    bucket = "lsw-bbk"             #   버켓명 
+    key = "terra1/terraform.tfstate"  #  생성되는 폴더/파일명  
     region = "ap-northeast-2"
   }
 
