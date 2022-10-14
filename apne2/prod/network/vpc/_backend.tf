@@ -1,11 +1,17 @@
 terraform {
 
-
-   backend "s3" {
-    bucket = "lsw-bucket"             #   버켓명 
-    key = "terra4/terraform.tfstate"  #  생성되는 폴더/파일명  
-    region = "ap-northeast-2"
+  backend "local" {
   }
+
+
+  #  backend "s3" {
+  #   bucket = "lsw-bucket"             #   버켓명 
+  #   key = "terra4/terraform.tfstate"  #  생성되는 폴더/파일명  
+  #   region = "ap-northeast-2"
+  # }
+
+
+
 #   backend "s3" {
 #     bucket      = "devops-prod-tfbackend-s3"
 #     key         = "apne2/network/vpc/terraform.tfstate"
