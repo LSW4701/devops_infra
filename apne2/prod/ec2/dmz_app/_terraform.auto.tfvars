@@ -15,7 +15,7 @@ ami_filters = [
 # EC2
 app_count           = 1
 instance_type       = "t3.micro"
-key_name            = "prod"
+key_name            = "linux1" #"prod"
 detailed_monitoring = true
 ec2_tags            = { monitoring : true }
 

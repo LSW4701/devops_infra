@@ -13,8 +13,8 @@ enable_ipv6        = false
 enable_nat_gateway = true
 single_nat_gateway = true
 
-private_subnet_tags = { "kubernetes.io/role/internal-elb" : 1 }
-public_subnet_tags  = { "kubernetes.io/role/elb" : 1 }
+private_subnet_tags = { "kubernetes.io/role/internal-elb" : 1 }     # alb 태그부분
+public_subnet_tags  = { "kubernetes.io/role/elb" : 1 }               # alb  태그부분 
 vpc_tags            = {}
 tags                = {}
 
