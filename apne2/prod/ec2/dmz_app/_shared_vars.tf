@@ -1,5 +1,5 @@
 variable "backend_s3" {
-  default = "lsw-bucket" #"devops-prod-tfbackend-s3"
+  default = "lsw-bbk" #"devops-prod-tfbackend-s3"
 }
 
 variable "region" {
@@ -7,7 +7,7 @@ variable "region" {
 }
 
 variable "vpc_key" {
-  default = "apne2/network/vpc/terraform.tfstate"
+  default = "terra1/terraform.tfstate"
 }
 
 variable "tags" {}
