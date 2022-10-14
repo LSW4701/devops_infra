@@ -1,14 +1,12 @@
 terraform {
 
-  backend "local" {
+ 
+
+   backend "s3" {
+    bucket = "lsw-bbk"             #   버켓명 
+    key = "terra1/terraform.tfstate"  #  생성되는 폴더/파일명  
+    region = "ap-northeast-2"
   }
-
-
-  #  backend "s3" {
-  #   bucket = "lsw-bucket"             #   버켓명 
-  #   key = "terra4/terraform.tfstate"  #  생성되는 폴더/파일명  
-  #   region = "ap-northeast-2"
-  # }
 
 
 
@@ -17,6 +15,8 @@ terraform {
 #     key         = "apne2/network/vpc/terraform.tfstate"
 #     region      = "ap-northeast-2"
 # #    role_arn    = "{ASSUMED_ROLE}"
-#     max_retries = 3
+#     max_retries = 3          # 최대 재 시도 값
 #   }
 }
+
+
