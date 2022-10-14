@@ -16,4 +16,4 @@ terraform {
 #     role_arn    = "arn:aws:iam::552661052297:role/terraform-runner-role"
 #     max_retries = 3
 #   }
-# }
+}
