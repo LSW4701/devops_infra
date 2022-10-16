@@ -4,7 +4,7 @@ terraform {
   
 
    backend "s3" {
-    bucket = "lsw-bbk"             #   버켓명 
+    bucket = "lsw-bbk1"             #   버켓명 
     key = "apne2/network/vpc/terraform.tfstate"  #  생성되는 폴더/파일명  
     region = "ap-northeast-2"
   }
