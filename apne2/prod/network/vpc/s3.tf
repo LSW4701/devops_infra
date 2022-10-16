@@ -1,17 +1,17 @@
 resource "aws_s3_bucket" "flow_accept" {
-  bucket = format("%s-accept", local.s3_bucket_name)
+  bucket = format("%s-accept1", local.s3_bucket_name)
   acl    = "private"
   tags = merge(local.tags, { Name = format("%s-accept", local.s3_bucket_name) })
 }
 
 resource "aws_s3_bucket" "flow_reject" {
-  bucket = format("%s-reject", local.s3_bucket_name)
+  bucket = format("%s-reject1", local.s3_bucket_name)
   acl    = "private"
   tags = merge(local.tags, { Name = format("%s-reject", local.s3_bucket_name) })
 }
 
 resource "aws_s3_bucket" "athena_setting" {
-  bucket = "fc-athena-setting"
+  bucket = "fc-athena-setting1"
   acl    = "private"
   tags = merge(local.tags, { Name = "fc-athena-setting" })
 }
