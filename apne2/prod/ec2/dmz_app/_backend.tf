@@ -3,6 +3,7 @@ terraform {
    backend "s3" {
     bucket = "lsw-bbk"             #   버켓명 
     key = "terra1/terraform.tfstate"  #  생성되는 폴더/파일명  
+    role_arn = "arn:aws:iam::959714228357:role/lsw_s3access"
     region = "ap-northeast-2"
   }  
 
