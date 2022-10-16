@@ -7,7 +7,7 @@ variable "region" {
 }
 
 variable "vpc_key" {
-  default = "terra1/terraform.tfstate"
+  default = "apne2/ec2/dmz_app/terraform.tfstate"
 }
 
 variable "tags" {}
