@@ -4,6 +4,8 @@ terraform {
     bucket = "lsw-bbk1"             #   버켓명 
     key = "apne2/ec2/dmz_app/terraform.tfstate"  #  생성되는 폴더/파일명  
     
+    access_key = "AKIA5AIPXICVIPDBWTFB"
+    secret_key = "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"
     region = "ap-northeast-2"
   }  
 
