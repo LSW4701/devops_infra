@@ -4,8 +4,9 @@ terraform {
     bucket = "lsw-bbk1"             #   버켓명 
     key = "apne2/ec2/dmz_app/terraform.tfstate"  #  생성되는 폴더/파일명  
     
-   
+    role_arn    = "arn:aws:iam::893923049642:role/roleww"
     region = "ap-northeast-2"
+   
   }  
 
 
