@@ -13,10 +13,11 @@ ami_filters = [
 ]
 
 # EC2
+# app_count         = 2 
 instance_type       = "t3.micro"
-key_name            = "prod"
+key_name            = "linux1" # 
 detailed_monitoring = true
-ec2_tags            = { monitoring : true }
+ec2_tags            = { monitoring : true }  # 모니터링 태그용
 
 # ssh sg
 ssh_sg_description      = "SSH Security group for Bastion EC2 instance"

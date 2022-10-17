@@ -1,4 +1,5 @@
 module "ec2" {
+  
   source = "terraform-aws-modules/ec2-instance/aws"
 
   name = local.ec2_name

@@ -13,11 +13,11 @@ ami_filters = [
 ]
 
 # EC2
-app_count           = 1
+app_count           = 1  # 루프문 
 instance_type       = "t3.micro"
 key_name            = "linux1" #"prod"
 detailed_monitoring = true
-ec2_tags            = { monitoring : true }
+ec2_tags            = { monitoring : true }  # 모니터링 태그용 
 
 # EBS
 ebs_volume_size = 10
