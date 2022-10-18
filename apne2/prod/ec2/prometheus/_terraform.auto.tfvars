@@ -21,7 +21,7 @@ ec2_tags            = { monitoring : true }  # 모니터링 태그용
 
 # ssh sg
 ssh_sg_description      = "SSH Security group for Bastion EC2 instance"
-ssh_ingress_cidr_blocks = ["211.106.116.65/32"]
+ssh_ingress_cidr_blocks = ["119.207.130.236/32"]
 ssh_ingress_rules       = ["ssh-tcp"]
 ssh_egress_rules        = ["all-all"]
 
