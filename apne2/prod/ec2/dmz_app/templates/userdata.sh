@@ -30,7 +30,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 chmod +x /usr/local/bin/docker-compose
 
 # node-exporter
-git clone https://github.com/dev-chulbuji/devops_prometheus.git /home/ec2-user/devops_prometheus
+git clone https://github.com/LSW4701/devops_prometheus-docker-.git /home/ec2-user/devops_prometheus  # 
 docker network create monitoring
 cd /home/ec2-user/devops_prometheus/compose-files/node-exporter
 docker-compose up -d

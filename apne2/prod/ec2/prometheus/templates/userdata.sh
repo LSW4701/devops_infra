@@ -32,7 +32,7 @@ chmod +x /usr/local/bin/docker-compose
 docker network create monitoring   # 도커 커스텀 네트워크를 먼저 생성 
 
 # prometheus
-git clone https://github.com/dev-chulbuji/devops_prometheus.git /home/ec2-user/devops_prometheus  # 프로메테우스 프로젝트 클론 
+git clone https://github.com/LSW4701/devops_prometheus-docker-.git /home/ec2-user/devops_prometheus  # 프로메테우스 프로젝트 클론 
 cd /home/ec2-user/devops_prometheus/compose-files/prometheus-ec2
 docker-compose up -d
 
