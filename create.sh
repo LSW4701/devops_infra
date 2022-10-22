@@ -6,3 +6,5 @@ terraform apply -auto-approve
 cd $DIR/apne2/prod/ec2/dmz_app ; terraform init
 terraform apply -auto-approve
 
+cd $DIR/apne2/prod/ec2/bastion ; terraform init
+terraform apply -auto-approve

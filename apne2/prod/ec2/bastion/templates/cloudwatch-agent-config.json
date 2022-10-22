@@ -1,10 +1,9 @@
 {
   "agent": {
-    "metrics_collection_interval": 60,
-    "run_as_user": "root",
+    "metrics_collection_interval": 60,    
     "region": "ap-northeast-2",
-    "logfile": "/opt/aws/amazon-cloudwatch-agent/logs/amazon-cloudwatch-agent.log",
-    "debug": false
+    "logfile": "/opt/aws/amazon-cloudwatch-agent/logs/amazon-cloudwatch-agent.log", 
+    "debug": false   
   },
   "logs": {
     "logs_collected": {
@@ -53,7 +52,7 @@
           "cpu_time_user",
           "cpu_time_system"
         ],
-        "metrics_collection_interval": 60,
+        "metrics_collection_interval": 60, 
         "resources": [
           "*"
         ],
