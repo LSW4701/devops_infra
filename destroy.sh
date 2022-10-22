@@ -9,7 +9,7 @@ terraform destroy -auto-approve
 cd $DIR/apne2/prod/ec2/bastion ; terraform init
 terraform destroy -auto-approve
 
-cd $DIR/apne2/prod/network ; terraform init
+cd $DIR/apne2/prod/network/vpc ; terraform init
 terraform destroy -auto-approve
 
 
