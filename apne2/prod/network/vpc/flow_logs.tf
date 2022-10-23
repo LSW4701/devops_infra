@@ -1,3 +1,4 @@
+
 resource "aws_flow_log" "s3_accept" {
   iam_role_arn             = module.iam_for_s3.iam_role_arn
   log_destination          = aws_s3_bucket.flow_accept.arn
