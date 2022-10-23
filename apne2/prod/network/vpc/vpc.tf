@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "github.com/terraform-aws-modules/terraform-aws-vpc"
+  
 
   name            = local.name
   cidr            = local.cidr
@@ -18,3 +18,4 @@ module "vpc" {
   private_subnet_tags = local.private_subnet_tags
   vpc_tags            = local.vpc_tags
 }
+#
