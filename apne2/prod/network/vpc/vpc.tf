@@ -1,6 +1,5 @@
 module "vpc" {
-  
-
+  source = "github.com/terraform-aws-modules/terraform-aws-vpc"
   name            = local.name
   cidr            = local.cidr
   private_subnets = local.private_subnets
