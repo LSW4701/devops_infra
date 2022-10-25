@@ -8,6 +8,10 @@ exports.handler = (input, context) => {
         } else {
             result = JSON.parse(result.toString('ascii'));
             console.log("Event Data:", JSON.stringify(result, null, 2));
+
+            // send slack
+
+            // automation
             context.succeed();
         }
     });
