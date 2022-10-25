@@ -18,6 +18,26 @@ module "ec2" {
   tags = local.tags
 }
 
+module "ec2" {
+  source = "terraform-aws-modules/ec2-instance/aws"
+
+  name = local.ec2_name +"2"
+
+  ami                         = local.ami_id
+  key_name                    = local.key_name
+  instance_type               = local.instance_type
+  availability_zone           = element(local.azs, 0)
+  subnet_id                   = element(local.public_subnet_ids, 0)
+  vpc_security_group_ids      = [module.ssh.security_group_id, local.default_sg_id]
+  iam_instance_profile        = module.iam.iam_instance_profile_name
+  associate_public_ip_address = true
+  monitoring                  = var.detailed_monitoring
+
+  user_data  = data.template_file.userdata.rendered
+
+  tags = local.tags
+}
+
 module "ssh" {
   source  = "terraform-aws-modules/security-group/aws"
   version = "~> 4.0"
