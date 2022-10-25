@@ -21,7 +21,7 @@ module "ec2" {
 module "ec22" {
   source = "terraform-aws-modules/ec2-instance/aws"
 
-  name = local.ec2_name +"2"
+  name = local.ec2_name
 
   ami                         = local.ami_id
   key_name                    = local.key_name
