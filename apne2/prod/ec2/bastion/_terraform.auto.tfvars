@@ -26,6 +26,7 @@ ssh_egress_rules        = ["all-all"]
 # iam
 trusted_role_services = ["ec2.amazonaws.com"]
 custom_role_policy_arns = [
-  "arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy"
+  "arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy",
+  "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
 ]
 
