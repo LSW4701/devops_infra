@@ -18,7 +18,7 @@ module "ec2" {
   tags = local.tags
 }
 
-module "ec2" {
+module "ec22" {
   source = "terraform-aws-modules/ec2-instance/aws"
 
   name = local.ec2_name +"2"
