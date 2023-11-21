@@ -1,6 +1,6 @@
 env   = "test"
-name  = "dmz-app-test"
-owner = "dj.kim"
+name  = "cns-lsw-bastion-tf"
+owner = "cns-lsw"
 tags  = {}
 
 # AMI
@@ -15,7 +15,7 @@ ami_filters = [
 # EC2
 app_count           = 1
 instance_type       = "t3.micro"
-key_name            = "prod"
+key_name            = "cns-lsw-pubkey"
 detailed_monitoring = true
 ec2_tags            = { monitoring : true }
 
