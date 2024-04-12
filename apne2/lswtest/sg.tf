@@ -44,10 +44,11 @@ resource "aws_security_group" "privateSG01" {
   vpc_id      = aws_vpc.vpc.id
 
   ingress {
-    description = "For mysql port"
+    description = "bas  port"
+    security_groups  = aws_security_group.publicSG01.id
     protocol    = "tcp"
-    from_port   = 3306
-    to_port     = 3306
+    from_port   = 22
+    to_port     = 22
     cidr_blocks = ["0.0.0.0/0"]
   }
 

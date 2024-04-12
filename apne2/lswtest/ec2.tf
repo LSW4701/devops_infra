@@ -28,18 +28,22 @@ resource "aws_instance" "testEC201" {
 }
 
 resource "aws_instance" "testEC202" {
-  ami                         = "ami-0c031a79ffb01a803" # al 2023
+  ami                         = "ami-0d1c657f89a7ccab7" 
+  # dvwa 플랫폼: Other Linux아키텍처: x86_64 소유자: 745081014833
   instance_type               = "t2.micro"
   subnet_id                   = aws_subnet.privateSubnet2.id
   key_name                    = "cns-lsw-pubkey"  ## 내 키페어
   #associate_public_ip_address = "true"
+  /*
   user_data                   = <<-EOF
               #!/bin/bash
               echo "Hello, World" > index.html
               nohup busybox httpd -f -p 8080 &
               EOF
+  
+  */
   vpc_security_group_ids = [
-    aws_security_group.privateSubnet1.id
+    aws_security_group.privateSG01.id
   ]
   root_block_device {
     volume_size = 8
@@ -50,6 +54,6 @@ resource "aws_instance" "testEC202" {
   }
 
   tags = {
-    "Name" = "cns-lsw-private"
+    "Name" = "cns-lsw-private-DVWA"
   }
 }

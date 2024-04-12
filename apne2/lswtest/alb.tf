@@ -1,3 +1,4 @@
+/*
 # alb.tf
 resource "aws_alb" "test" {
   name                             = "cns-lsw-testalb"
@@ -37,3 +38,4 @@ resource "aws_alb_listener" "test" {
     target_group_arn = aws_alb_target_group.test.arn
   }
 }
+*/
