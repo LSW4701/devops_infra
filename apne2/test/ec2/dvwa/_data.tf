@@ -1,8 +1,11 @@
+
+
+
 data "aws_caller_identity" "current" {}
 
+/*
+### AMI, amz2 최신 가져오기 
 data "aws_ami" "this" {
-
-  ## 최신 AMI. 
   most_recent = true
   owners      = local.ami_owners
 
@@ -14,6 +17,7 @@ data "aws_ami" "this" {
     }
   }
 }
+*/
 
 data "template_file" "userdata" {
   template = file("templates/userdata.sh")

@@ -7,6 +7,7 @@ locals {
   # cidr
   cidr            = var.vpc_cidr
   public_subnets  = var.public_subnets
+  private_subnets  = var.private_subnets
 
   enable_ipv6 = var.enable_ipv6
 
@@ -15,4 +16,5 @@ locals {
   tags                = merge(var.tags, { Owner = var.owner, Environment = var.env })
   vpc_tags            = merge(var.vpc_tags, { Name = format("%s-vpc", var.name) })
   public_subnet_tags  = merge(var.public_subnet_tags)
+  private_subnet_tags  = merge(var.private_subnet_tags)
 }
